@@ -1,0 +1,41 @@
+/* #menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.menu-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.quantity-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-control button {
+    margin: 0 5px;
+} */
+
+#text-upper {
+    position: absolute;
+    margin-left: 47%;
+    margin-top: 20%;
+    font-weight: bolder;
+    transform: translate(-50%, -50%);
+    font-size: 4.5em;
+    color: white;
+  }
