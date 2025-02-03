@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/bag-index.css">
+    <link rel="stylesheet" href="css/bag.css">
+    <link rel="stylesheet" href="./css/aboutus.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        /* background-color: #f9f9f9; */
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: wheat;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+
+</head>
+<body>
+    <!-- <header>
+        <div class="logo_container">
+        </div>
+        <nav class="nav_bar"></nav>
+        <div class="action_bar">
+
+            <div class="action_container">
+                <a href="index.html"><span class="action_name">Home</span></a>
+            </div>
+        </div>
+    </header> -->
+    <!-- <main>
+      <div class="bag-page">
+        <div class="bag-items-container"></div>
+        <div class="bag-summary"></div>
+    </main>
+      </footer> -->
+
+      <div class="wrapper">
+        <div class="container">
+            <div class="overlay"></div>
+        </div>
+
+        <div class="text-upper"> Cart Items</div>
+
+        
+
+        <div class="nav-bar">  
+            <ul>
+                <div class="logo">
+                    <img id="logo-photo" src="./images/utensil.png" alt="utensils">
+                    <h2 class="resturant-name">The Babu's Kitchen</h2>
+                </div>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICE</a></li>
+
+                <!-- Dropdown Menu -->
+                <li class="dropdown">
+                  <a href="menu.html" class="dropbtn">MENU</a>
+                  <ul class="dropdown-content">
+                      <li><a href="veg.html">Veg</a></li>
+                      <li><a href="nonVeg.html">Non-Veg</a></li>
+                      <li><a href="pizza.html">Pizza</a></li>
+                      <li><a href="chinese.html">Chinese</a></li>
+                      <li><a href="southIndian.html">South Indian</a></li>
+                      <li><a href="coffeeJuice.html">Coffee and Juice</a></li>
+                      <li><a href="dessert.html">Dessert</a></li>
+                  </ul>
+              </li>
+
+                <!-- <li><a href="menu.html">MENU</a></li> -->
+                <li><a href="cart.html">🛒</a></li>
+                <li><a href="login_page.html" id="LOG">LOGIN</a></li>
+                <a href="booktable.html"><button class="booking-btn">BOOK A TABLE</button></a>
+              </ul>
+        </div>
+
+      </div>
+
+      <header>
+        <div class="logo_container"></div>
+      <nav id="nav_bar"></nav>
+      <div class="action_bar">
+
+          <div class="action_container">
+              <a href="index.html"><span class="action_name">Home</span></a>
+          </div>
+      </div>
+      </header>
+
+      <main>
+        <div class="bag-page">
+          <div class="bag-items-container"></div>
+          <div class="bag-summary"></div>
+        </div>
+      </main>
+
+
+    <div class="outer-footer-part">
+      <div class="footer-part">
+        <div class="company-section">
+          <div class="heading-part">The Babu's Kitchen</div>
+          <div class="inside-text">
+            <a href="aboutus.html"><span>About Us</span></a>
+            <a href="contact.html"><span>Contact Us</span></a>
+            <a href="booktable.html"><span>Reservation</span></a>
+            <span>Privacy Policy</span>
+            <span>Terms & condition</span>
+          </div>
+        </div>
+        <div class="contact-section">
+          <div class="heading-part">Contact</div>
+          <div class="inside-text">
+            <div class="inside-text-part">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Ghansoli, Navi Mumbai</span>
+            </div>
+
+            <div class="inside-text-part">
+              <i class="fa-solid fa-phone"></i>
+              <span>+9103741454</span>
+            </div>
+
+            <div class="inside-text-part">
+              <i class="fa-solid fa-envelope"></i>
+              <span>name@gmail.com</span>
+            </div>
+
+            <div class="social-media">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+        <div class="opening-section">
+          <div class="heading-part">Opening</div>
+          <div class="inside-text">
+            <span>Monday-Saturday</span>
+            <span>09AM-09PM</span>
+            <span>Sunday</span>
+            <span>10AM-08PM</span>
+          </div>
+        </div>
+        <div class="newsletter-section">
+          <div class="heading-part">Newsletter</div>
+
+          <div class="login-screen">
+            <input type="email" id="email" placeholder="Your email" />
+            <button class="booking-btn2">SIGN UP</button>
+          </div>
+        </div>
+      </div>
+      <div class="developedBy"></div>
+
+      <div class="copyright">Copyright © 2025 - All Rights Reserved ®</div>
+    </div>
+    <script src="JS/menuItem.js"></script>
+      <script src="JS/menuDynamic.js"></script>
+      <script src="JS/index.js"></script>
+      <script src="JS/cart.js"></script>
+      <script src="JS/veg.js"></script>
+      <script src="JS/nonVeg.js"></script>
+      
+</body>
+</html>

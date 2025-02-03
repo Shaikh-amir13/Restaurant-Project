@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="./css/services.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <style>
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        /* background-color: #f9f9f9; */
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: wheat;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="overlay"></div>
+      </div>
+
+      <div class="text-upper">Our Menu</div>
+      <div class="nav-bar">
+        <!-- <ul>
+          <div class="logo">
+            <img id="logo-photo" src="./images/utensil.png" alt="utensils" />
+            <h2 class="resturant-name">The Babu's Kitchen</h2>
+          </div>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="aboutus.html">ABOUT</a></li>
+          <li><a href="services.html">SERVICE</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="cart.html"> 🛒 </a></li>
+          <li><a href="login_page.html" id="LOG">LOGIN</a></li>
+          <a href="booktable.html"
+            ><button class="booking-btn">BOOK A TABLE</button></a
+          >
+        </ul> -->
+
+        <ul>
+          <div class="logo">
+            <img id="logo-photo" src="./images/utensil.png" alt="utensils" />
+            <h2 class="restaurant-name">The Babu's Kitchen</h2>
+          </div>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="aboutus.html">ABOUT</a></li>
+          <li><a href="services.html">SERVICE</a></li>
+          <li class="dropdown">
+            <a href="menu.html" class="dropbtn">MENU</a>
+            <ul class="dropdown-content">
+              <li><a href="veg.html">Veg</a></li>
+              <li><a href="nonVeg.html">Non-Veg</a></li>
+              <li><a href="pizza.html">Pizza</a></li>
+              <li><a href="chinese.html">Chinese</a></li>
+              <li><a href="southIndian.html">South Indian</a></li>
+              <li><a href="coffeeJuice.html">Coffee and Juice</a></li>
+              <li><a href="dessert.html">Dessert</a></li>
+            </ul>
+          </li>
+          <li><a href="cart.html"> 🛒 </a></li>
+          <li><a href="login_page.html" id="LOG">LOGIN</a></li>
+          <a href="booktable.html"
+            ><button class="booking-btn">BOOK A TABLE</button></a
+          >
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="main-section">
+      <div class="menu-bar">
+        
+      </div>  
+
+    </div>
+
+    <script>
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+      function handleScroll() {
+        const boxes = document.querySelectorAll(".box");
+        boxes.forEach((box) => {
+          if (isInViewport(box)) {
+            box.classList.add("show");
+          }
+        });
+      }
+      window.addEventListener("scroll", handleScroll);
+      handleScroll();
+    </script>
+
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuDropdown = document.getElementById("menuDropdown");
+        const categories = ["Veg", "Non-Veg", "Chinese"];
+
+        categories.forEach((category) => {
+          const categoryLink = document.createElement("a");
+          categoryLink.textContent = category;
+          categoryLink.href = "#";
+          categoryLink.onclick = function () {
+            filterMenu(category);
+          };
+          menuDropdown.appendChild(categoryLink);
+        });
+      });
+
+      function filterMenu(category) {
+        alert("Filtering menu for: " + category);
+      }
+    </script> -->
+
+    <div id="menu-container"></div>
+
+        <!-- <div class="text-upper">Enjoy Our Delicious Meal</div>
+        <div class="text-lower">Service the best quality and tasty meals.</div>
+      </div> -->
+
+      <div class="outer-footer-part">
+        <div class="footer-part">
+          <div class="company-section">
+            <div class="heading-part">The Babu's Kitchen</div>
+            <div class="inside-text">
+              <a href="aboutus.html"><span>About Us</span></a>
+              <a href="contact.html"><span>Contact Us</span></a>
+              <a href="booktable.html"><span>Reservation</span></a>
+              <span>Privacy Policy</span>
+              <span>Terms & condition</span>
+            </div>
+          </div>
+          <div class="contact-section">
+            <div class="heading-part">Contact</div>
+            <div class="inside-text">
+              <div class="inside-text-part">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Ghansoli, Navi Mumbai</span>
+              </div>
+  
+              <div class="inside-text-part">
+                <i class="fa-solid fa-phone"></i>
+                <span>+9103741454</span>
+              </div>
+  
+              <div class="inside-text-part">
+                <i class="fa-solid fa-envelope"></i>
+                <span>name@gmail.com</span>
+              </div>
+  
+              <div class="social-media">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+          <div class="opening-section">
+            <div class="heading-part">Opening</div>
+            <div class="inside-text">
+              <span>Monday-Saturday</span>
+              <span>09AM-09PM</span>
+              <span>Sunday</span>
+              <span>10AM-08PM</span>
+            </div>
+          </div>
+          <div class="newsletter-section">
+            <div class="heading-part">Newsletter</div>
+  
+            <div class="login-screen">
+              <input type="email" id="email"  placeholder="Your email" />
+              <button class="booking-btn2">SIGN UP</button>
+            </div>
+          </div>
+        </div>
+        <div class="developedBy"></div>
+  
+        <div class="copyright">Copyright © 2025 - All Rights Reserved ®</div>
+      </div>
+
+    <script src="./JS/menu.js"></script>
+    <script src="./JS/menuItem.js"></script>
+    <script src="/JS/menuDynamic.js"></script>
+    <!-- <script src="/JS/cart.js"></script> -->
+  </body>
+</html>
